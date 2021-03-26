@@ -5,19 +5,19 @@
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   color: #FFFFFF;
   margin: 0;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
+  padding: 0;
+}
 
+.page__container {
+  margin: auto;
 }
 
 /* стили header */
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 28px 0 56px 0;
-  width: calc(100% - (48px*2));
+  padding: 28px 48px 0;
+  max-width: 1184px;
 }
 
 .header__logo {
@@ -27,6 +27,7 @@
 
 .header__lang {
   display: flex;
+  align-items:center
 }
 
 .header__lang-link {
@@ -50,7 +51,7 @@
 
 /* стили lead */
 .lead {
-  width: 1005px;
+  max-width: 984px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -65,8 +66,8 @@
   font-size: 96px;
   line-height: 100px;
   text-align: center;
-  margin: 0;
-  max-width: 720px;
+  margin: 56px 0 0;
+  width: 720px;
 }
 
 .lead__subtitle {
@@ -100,7 +101,7 @@
 
 .intro {
   position: relative;
-  width: 1005px;
+  max-width: 984px;
 }
 
 
@@ -146,18 +147,35 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  min-height: 213px;
   gap: 16px;
+  max-width: 1184px;
 }
 
 .photo-grid__item {
-  max-width: 352px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 
 /* стили places */
+
+.places {
+  max-width: 984px;
+  padding: 92px 0;
+}
+
+.place {
+  padding-bottom: 80px;
+}
+
+.place:last-of-type {
+  padding: 0;
+}
+
 .place__header {
   display: flex;
-  margin-top: 92px;
   margin-bottom: 48px;
   align-items: flex-end;
 }
@@ -227,16 +245,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding: 92px 0;
+  background-image: url(../images/train__background.jpg);
+  background-size: 100% 100%;
+  margin-bottom: 92px;
 }
 
 .cover__text {
-  position: absolute;
   z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 245px 312px;
 }
 
 .cover__title {
@@ -272,14 +292,12 @@
   opacity: 0.8;
 }
 
-.cover__background {
-  width: calc(100% - (48px*2));
-}
+
 
 .footer {
   display: flex;
   justify-content: space-between;
-  width: calc(100% - (48px*2));
+  max-width: 984px;
 }
 
 .footer__link {
@@ -291,6 +309,7 @@
   color: #FFFFFF;
   text-decoration: none;
   margin: 0 18px 0 0;
+
 }
 
 .footer__link:last-child {
@@ -311,3 +330,270 @@
   font-size: 14px;
   line-height: 16px;
 }
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    max-width: 928px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .places {
+    max-width: 928px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 928px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .lead__title {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    max-width: 928px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+.page__container {
+  margin: auto;
+}
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    max-width: 928px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .cover__overlay {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+.place__image  {
+  max-width: 440px;
+}
+}
+
+@media screen and (max-width: 1180px) {
+  .cover__text {
+    padding: 195px 132px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .cover__text {
+    padding: 115px 104px;
+  }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .place__image  {
+    max-width: 440px;
+  }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .place__title {
+      width: 440px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .place__title {
+      font-size: 42px;
+      line-height: 46px;
+      width: 340px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+  .lead__caption {
+    padding-left: 24px;
+  }
+  }
+
+  @media screen and (max-width: 768px) {
+  .intro__title {
+    margin-top: 88px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .intro__list {
+    margin-bottom: 88px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.places {
+  max-width: 720px;
+  padding: 88px 0;
+}
+}
+@media screen and (max-width: 768px) {
+.place {
+  padding-bottom: 73px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .place__image {
+    max-width: 340px;
+  }
+  }
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .place__paragraph {
+    font-size: 16px;
+    line-height: 163%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.cover {
+  margin-bottom: 88px;
+}
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    max-width: 288px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+.cover__text {
+  padding: 33px 16px;
+}
+}
+
+@media screen and (max-width: 740px) {
+.cover__subtitle {
+  font-size: 14px;
+  line-height: 16px;
+  width: 288px;
+}
+}
+
+@media screen and (max-width: 740px) {
+  .cover__title {
+    font-size: 32px;
+    line-height: 35px;
+    width: 288px;
+  }
+  }
+
+  @media screen and (max-width: 740px) {
+    .lead__title {
+      font-size: 40px;
+      line-height: 44px;
+      width: 288px;
+    }
+    }
+
+    @media screen and (max-width: 740px) {
+      .lead__subtitle {
+        font-size: 16px;
+        line-height: 20px;
+        width: 288px;
+      }
+      }
+
+      @media screen and (max-width: 430px) {
+        .places {
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 430px) {
+      .place__content {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .place__header {
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .place__header {
+        width: 288px;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .place__paragraph {
+        width: 288px;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .place__image {
+        width: 320px;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .intro {
+        width: 288px;
+      }
+    }
+
+    @media screen and (max-width: 430px) {
+      .places {
+
+      }
+    }
+
