@@ -1,0 +1,13 @@
+.place__header {
+  display: flex;
+  margin-bottom: 48px;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 550px) {
+  .place__header {
+    display: block;
+    margin-left: 16px;
+    margin-bottom: 32px;
+  }
+}

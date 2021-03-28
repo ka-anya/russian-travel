@@ -1,0 +1,10 @@
+.place__content {
+  display: flex;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 550px) {
+  .place__content {
+    display: block;
+  }
+}

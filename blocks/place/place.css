@@ -1,0 +1,19 @@
+.place {
+  padding-bottom: 80px;
+}
+
+.place:last-of-type {
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .place {
+    padding-bottom: 73px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .place {
+    padding-bottom: 50px;
+  }
+}
