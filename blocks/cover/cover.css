@@ -1,12 +1,12 @@
 .cover {
-  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   background-image: url(../../images/train__background.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   margin-bottom: 92px;
   max-width: 1184px;
 }
@@ -28,3 +28,11 @@
     margin-bottom: 64px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .cover {
+    max-height: 200px;
+  }
+}
+
+

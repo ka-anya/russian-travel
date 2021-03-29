@@ -4,7 +4,7 @@
   align-items: flex-end;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .place__header {
     display: block;
     margin-left: 16px;

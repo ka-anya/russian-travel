@@ -10,12 +10,13 @@
   <body class="page">
     <header class="header page__container">
       <img class="header__logo" src="./images/header-logo.svg" alt="Россия">
-      <div class="header__lang">
-        <a class="header__lang-link" target="_self" href="#">Ru</a>
-        <a class="header__lang-link" target="_self" href="#">En</a>
-      </div>
+      <ul class="header__lang">
+        <li class="header__lang-link"><a class="header__lang-link header__lang-link_active" target="_self" href="#">Ru</a></li>
+        <li class="header__lang-link"><a class="header__lang-link" target="_self" href="#">En</a></li>
+      </ul>
     </header>
 
+    <main>
       <section class="lead page__container">
         <h1 class="lead__title">Путешествия по России</h1>
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
@@ -154,7 +155,7 @@
       </section>
 
 
-      <section class="footer page__container">
+      <footer class="footer page__container">
         <nav class="footer__links">
           <a class="footer__link" target="_blank" href="https://yandex.ru/maps">Карты</a>
           <a class="footer__link" target="_blank" href="https://yandex.ru/pogoda">Погода</a>
@@ -163,7 +164,7 @@
           <a class="footer__link" target="_blank" href="https://travel.yandex.ru">Путешествие</a>
         </nav>
         <p class="footer__copyright">&copy;2021. Камонина Анна</p>
-      </section>
-
+      </footer>
+    </main>
   </body>
 </html>
